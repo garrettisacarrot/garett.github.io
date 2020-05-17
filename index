@@ -1,0 +1,509 @@
+<html>
+
+<head>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114293140-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+        gtag('config', 'UA-114293140-1');
+
+    </script>
+    <title>Garrett Chin - Portfolio</title>
+    <meta charset="utf-8">
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Garrett Chin's Resume Site.">
+    <meta name="keywords" content="Garrett,Chin,Garrett Chin,New Jersey,Jersey,Ithaca,New York,East Coast,Web,Web Developder,Web Analyst,Analyst,Video Game Developer, Video Game,bboy,breaker,Computer Scientist,Ithaca College, Communication,Communication Management,Design,Instruction,Instructional Design,resume,portfolio,student,student portfolio,UX,UI,User Interface Design,User Experience Design, HCI, Human Compuet Interaction">
+    <meta name="author" content="Garrett Chin">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="style.css" type="text/css">
+    <link rel="icon" type="image/png" href="images/logo.png">
+    <script>
+        //accordian----------------------
+        function openinfo(evt, infoname) {
+            var i, tabcontent, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(infoname).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function openinfo1(evt, infoname) {
+            var i, tabcontent1, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent1");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(infoname).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function openinfo2(evt, infoname) {
+            var i, tabcontent2, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent2");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(infoname).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function openinfo3(evt, infoname) {
+            var i, tabcontent3, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent3");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(infoname).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+
+        function openinfo4(evt, infoname) {
+            var i, tabcontent4, tablinks;
+            tabcontent = document.getElementsByClassName("tabcontent4");
+            for (i = 0; i < tabcontent.length; i++) {
+                tabcontent[i].style.display = "none";
+            }
+            tablinks = document.getElementsByClassName("tablinks");
+            for (i = 0; i < tablinks.length; i++) {
+                tablinks[i].className = tablinks[i].className.replace(" active", "");
+            }
+            document.getElementById(infoname).style.display = "block";
+            evt.currentTarget.className += " active";
+        }
+        //scrollsmooth-------------------
+        $(document).ready(function() {
+            $("a").on('click', function(event) {
+                if (this.hash !== "") {
+                    event.preventDefault();
+                    var hash = this.hash;
+                    $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                    }, 800, function() {
+                        window.location.hash = hash;
+                    });
+                }
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+
+    <!--
+    <nav id="nav">
+        <ul class="topnav ">
+            <li id="top"><a href="#headerimg">Garrett Chin</a></li>
+            <li id="about"><a href="#aboutme">What I Do</a></li>
+            <li id="port"><a href="#portfolio">Portfolio</a></li>
+            <li id="contact"><a href="#contactme">Contact</a></li>
+        </ul>
+    </nav>
+--->
+    <!-- <div style="background-color: #E8D791;box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) ; text-align: justify; font-size: 16pt;margin:auto;width: 90%;margin-top: 3%; padding: 1%">
+        <p>Hello! </p>
+        <p>Thank you for taking the time to visit my portfolio. I'm graduating from Ithaca College in May 2018 with a degree in Communication Management and Design with an emphasis on Experience Design. I'm currently looking for opportunities to use my skills in Experience Design, Instructional Design, and/or Web Programming after I graduate. My skillset also includes Marketing, Graphic Design, Community Management, 3D Printing, and Interface Design.</p>
+        <p>Information on projects I've worked on are below. If you would like any additional information feel free to contact me.</p>
+    </div>
+-->
+    <section id="headerimg">
+        <div class="row">
+            <div class="column buffer"></div>
+            <div class="column full">
+                <div class="hero-image">
+                    <div class="hero-text">
+                        <h1>Garrett Chin</h1>
+                        <p>Media Specialist</p>
+                    </div>
+                </div>
+            </div>
+            <div class="column buffer"></div>
+        </div>
+
+    </section>
+    <section id="aboutme">
+        <!---row 1 of about --->
+        <div class="row">
+            <div class="column buffer"></div>
+            <div class="column side">
+                <div class="containerimg"> <img class="responsiveimg" src="images/redbox.png" />
+                    <div class="bottom-lefttxt">Virtual and Augmented Reality</div>
+                    <div class="overlay" onclick="openinfo(event, 'vr')">
+                        <div class="overlaytext">My experiences in leading and designing using Virtual Reality and Augmentsed Reality.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column side">
+                <div class="containerimg"> <img class="responsiveimg" src="images/3Dprint2.jpg" />
+                    <div class="bottom-lefttxt">3D Printing</div>
+                    <div class="overlay" onclick="openinfo(event, '3dprinting')">
+                        <div class="overlaytext">Leadership in bringing 3D printing to the curriculum in the Park School of Communications.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column side">
+                <div class="containerimg"> <img class="responsiveimg" src="images/compsci.png" />
+                    <div class="bottom-lefttxt">Computer Science</div>
+                    <div class="overlay" onclick="openinfo(event, 'compsci')">
+                        <div class="overlaytext">I minored in Web Programming while at Ithaca College.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column buffer"></div>
+        </div>
+        <div class="row">
+            <div id="3dprinting" class="tabcontent">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>3D Printing</h3>
+                    <p>Research I was involved in of was part of the decision making process that brought 3D printers to the Park School of Communications at Ithaca College. I personally assembled the first printer after the pieces arrived in the mail and quickly became the resident 3D printing expert of the Park School. As the 3D printing expert of the Park School I have helped students and faculty bring their projects to life. I've helped cinema students print out pieces for their sets and have helped professors with their personal research tasks.</p>
+                    <p>I have Experience 3D Modelling for 3D Printing using branded materials. Here are replacement Keyboard keys I made that utilize the AMD Logo and Typeface.</p>
+                    <div class="imgrow">
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/capsRender.png" /></div>
+                            <div class="containerimg"> <img class="responsiveimg" style="max-height:500px" src="images/capsIRL.jpg" /></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+            <div id="vr" class="tabcontent">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>VR &amp; AR</h3>
+                    <p>While at Ithaca College I ran the Park School Innovation Lab and spent many hours experimenting with Virtual Reality, primarily with an HTC Vive system. I've done many technical demonstations for Virtual Reality for prospective students, Alumni, and other proefssionals. My involvement in these tours was to show off our Virtual Reality Headset. I also have experience developing for Augmented reality, and have completed projects using the platforms Aurasma and Augment. I also worked with a team of students to create a VR game in the Unity game engine.</p>
+                    <video width="400" preload controls>
+                        <source src="vrgame.mp4" type="video/mp4"> </video>
+                    <p>The game was created as an experiment to test principles of Human Computer Interaction in a Virtual Reality setting. We conducted several user tests and wrote a detailed documentation which can be found <a target="_blank" href="ClimbWriteup.pdf">here.</a></p>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+            <div id="compsci" class="tabcontent">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>Web Programming &amp; Computer Science</h3>
+                    <p>Expience Design is my main deal so whats the point of learning all these design theories with no environment to test them in? That is where computer science comes in for me. I specialize in web programming languages (PHP, Javascript, CSS, HTML, mySQL), but I also have experience coding in XML, Python and Java. I also have experience with SEO writing, Content management systems such as wordpress, and .NET framework. I was a founding member of the Ithaca Developers Environment, an organization dedicated to empowering computer scientists.</p>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+        </div>
+        <!---row 2 of about --->
+        <div class="row">
+            <div class="column buffer"></div>
+            <div class="column middle">
+                <div class="containerimg"> <img class="responsiveimg" src="images/lot10.jpg" />
+                    <div class="bottom-lefttxt">Breakdance</div>
+                    <div class="overlay" onclick="openinfo1(event, 'breaking')">
+                        <div class="overlaytext">Dancing is my favorite way of engaging with my community.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column middle">
+                <div class="containerimg"> <img class="responsiveimg" src="images/GN.jpg" />
+                    <div class="bottom-lefttxt">Diversity and Activism</div>
+                    <div class="overlay" onclick="openinfo1(event, 'DA')">
+                        <div class="overlaytext">While at Ithaca College I learned what it means to be a part of a community.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column buffer"></div>
+        </div>
+        <div class="row">
+            <div id="breaking" class="tabcontent1">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>Breaking</h3>
+                    <p>I've been breakdancing since I was 15. Since then I've dedicated many hours and have developed a large network of mentors and peers. I'm the president of Ithaca College's breaking group: The Ground Up Crew. During my time as club president I increased regular club attendance by facilitating community outreach and fostering an inclusive environment. I participate in event planning and community building in the form of hosting Zero Ground Given, a joint effort by The Ithaca College Ground Up Crew and Cornell's Absolute Zero to bring together the Hip-Hop dance community. At Zero Ground Given we hosted judges from Finland, had dancers from around the world compete, had events MCed by Hip-Hop legend <a href="https://en.wikipedia.org/wiki/Grandmaster_Caz" target="_blank">Grandmaster Caz</a>. Community building is my favorite aspect of dance. </p>
+                    <p>As President of the Ithaca College Ground Up Crew I also was responsible for creating club budgets, running club social media, and mediating disputes between club members.</p>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+            <div id="DA" class="tabcontent1">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>Diversity &amp; Activism</h3>
+                    <p>My mentor in community building was Dr. Nguyen, a respected scholar of Asian American Studies and widely influencial individual in the Ithaca Community. He was the first person I've ever seen order food on a tab, he was just that well known and reputable. Through him I learned what it means to be a part of a community. Under his guidence I sat on the Community Outreach Committee for the Ithaca Pan Asian American Film Festival. During that time I was responsible for reaching out to local businesses as well as promoting the event. When he left for California he left me with a mission that I hope to uphold for the rest of my life, to look after others in my community the same way he had. </p>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+        </div>
+    </section>
+    <section id="portfolio">
+        <!---row 1 of portfolio --->
+        <div class="row">
+            <div class="column buffer"></div>
+            <div class="column middle">
+                <div class="containerimg"> <img class="responsiveimg" src="images/BB-8_Panel.png" />
+                    <div class="bottom-lefttxt">Ithaca College BB-8 Builders</div>
+                    <div class="overlay" onclick="openinfo2(event, 'BB8')">
+                        <div class="overlaytext">I am leading a team of students in creating a life-sized BB-8 robot...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column middle">
+                <div class="containerimg"> <img class="responsiveimg" src="images/newspaperad.jpg" />
+                    <div class="bottom-lefttxt">Marketing Experience</div>
+                    <div class="overlay" onclick="openinfo2(event, 'market')">
+                        <div class="overlaytext">I also have experience in Marketing, both in planning and creation of marketing materials...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column buffer"></div>
+        </div>
+        <div class="row">
+            <div id="BB8" class="tabcontent2">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>BB-8</h3>
+                    <p>In my last year at Ithaca College I led a team of students in building a life sized working BB-8. I was awarded a James B. Pendleton Grant for student research. This project required a synthesis of many of my skills, like 3D printing, programming, and social media outreach. The parts are all 3D printed and the electronics and motor controls are all based on schematics we made specifically for this project. In April 2019, the year after my graduation, we were proud to present our work and its application to STEM education at Star Wars Celebration 2019. The Ithaca College newspaper even <a href="https://www.ithaca.edu/news/force-strong-these-ic-students" target="_new">published</a> a story about us. </p>
+                    <!-- <p>Here are some pictures of our progress:</p>
+                    <div class="imgrow">
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/bennie.jpg" /></div>
+                            <div class="containerimg"> <img class="responsiveimg" style="max-height:500px" src="images/mebb8.jpg" /></div>
+                        </div>
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/bb8math.jpg" /></div>
+                            <div class="containerimg"> <img class="responsiveimg" style="max-height:500px" src="images/eyebb8.jpg" /></div>
+                        </div>
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/dmm.jpg" /></div>
+                            <div class="containerimg"> <img class="responsiveimg" style="max-height:500px" src="images/porchbb8.jpg" /></div>
+                        </div>
+                    </div>
+-->
+                    <p>Here is a motion graphic I created with my team to promote our project:</p>
+                    <video width="400" preload controls>
+                        <source src="bb8vid.mp4" type="video/mp4"> </video>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+            <div id="market" class="tabcontent2">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>Marketing</h3>
+                    <p>I am currently employed as a Marketing Associate for DatapointLabs. As Marketing Associate I have many responsibilities including preparing our staff for trade shows, creating promotional and instructional material for our services, and managing our web presence. DatapointLabs is a B2B business, so coupled with my education I am knowledgeable in both B2B and B2C marketing. I oversaw our rebanding efforts after we were aquired by Applus+ Labratories, and worked to design our updated website design. While I was a Marketing Intern at Ithaca College Dining Services I was in charge of creating small ad campaigns as well as creating the associated marketing materials. Most of the marketing I planned and created for were meant for use on the web but I also created advertisements that appeared in our school newspaper. During the time these ads were running enrollment in faculty meal plans had gone up roughly 50%.</p>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+        </div>
+        <!--- row 2 portfolio --->
+        <div class="row">
+            <div class="column buffer"></div>
+            <div class="column side">
+                <div class="containerimg"> <img class="responsiveimg" src="images/mobo.jpg" />
+                    <div class="bottom-lefttxt">Information Technology</div>
+                    <div class="overlay" onclick="openinfo3(event, 'it')">
+                        <div class="overlaytext">To meet the needs of my workload I built my own computer...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column side">
+                <div class="containerimg"> <img class="responsiveimg" src="images/marketing.png" />
+                    <div class="bottom-lefttxt">Marketing and Social Media</div>
+                    <div class="overlay" onclick="openinfo3(event, 'marksm')">
+                        <div class="overlaytext">I worked on Social Media Plans as well as marketing plans...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column side">
+                <div class="containerimg"> <img class="responsiveimg" src="images/data.png" />
+                    <div class="bottom-lefttxt">Data Visualization</div>
+                    <div class="overlay" onclick="openinfo3(event, 'datavis')">
+                        <div class="overlaytext">Because of my background in computer science and graphic design creating data visualizations is also within my skillset.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column buffer"></div>
+        </div>
+        <div class="row">
+            <div id="it" class="tabcontent3">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>IT</h3>
+                    <p>This year applied my knowledge of PC hardware to build my own custom computer to meet my design and development needs. This was no easy task, learning all about how computers work, what parts do what, what exactly a Gigahertz is. Before this I had a lot of knowledge of how to solve windows related software problems, from enabling proxies and vpns to finding out how to bypass a MAC Address Ban. After many hours of research and troubleshooting second hand components I finally had brought my computer to life. </p>
+                    <div class="containerimg"> <img class="responsiveimg" src="images/comp.gif"></div>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+            <div id="marksm" class="tabcontent3">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>Social Media</h3>
+                    <p><a href="SocialMediaStrategy.pdf" target="_blank">Here</a> is an in depth strategic plan for Social Media I created with other students.</p>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+            <div id="datavis" class="tabcontent3">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>Data Visualization</h3>
+                    <p>I am interested in applying my programming and design skills to create data visualizations. I have experience creating dashboards for data. I created this data visualization as a part of a class project. The design is certainly tacky but the principle ideas are there. <a href="datavis/index.html" target="_blank">Here is a link to that.</a> I also have expereince with collecting data through google analytics. </p>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+        </div>
+        <!--- row 3 portfolio --->
+        <div class="row">
+            <div class="column buffer"></div>
+            <div class="column middle">
+                <div class="containerimg"> <img class="responsiveimg" src="images/game.png" />
+                    <div class="bottom-lefttxt">Game Redesign</div>
+                    <div class="overlay" onclick="openinfo4(event, 'tanks')">
+                        <div class="overlaytext">I have a vested interest in games and game design...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column middle">
+                <div class="containerimg"> <img class="responsiveimg" src="images/mentorship.jpg" />
+                    <div class="bottom-lefttxt">UX, Focus Groups, and Paper Prototyping</div>
+                    <div class="overlay" onclick="openinfo4(event, 'focusgroup')">
+                        <div class="overlaytext">Integral to UX is usability, which is best tested using real people...</div>
+                    </div>
+                </div>
+            </div>
+            <div class="column buffer"></div>
+        </div>
+        <div class="row">
+            <div id="tanks" class="tabcontent4">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>Tanks the Constructible Card Game</h3>
+                    <p>As a class project to reskin an existing game for marketing purposes I chose to reskin the tabletop game Pirates the Constructable Card Game. The original game is a tabletop strategy game that once included content from Disney's <i>Pirates of the Caribbean</i>. Using the same concept I reskinned and redesigned the game to be played in VR using WWII era tanks. Using community sourced 3D models I created the game using the Tabletop Simulator platform and released it online. I also created my own cards to accompany the models using Adobe Photoshop, rewrote the rules document, all guided by a mood board. </p>
+                    <div class="imgrow">
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/20180213230628_1.jpg" /></div>
+                            <div class="containerimg"> <img class="responsiveimg" style="max-height:500px" src="images/20180213230656_1.jpg" /></div>
+                        </div>
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/crew.png" /></div>
+                            <div class="containerimg"> <img class="responsiveimg" style="max-height:500px" src="images/alltanks.png" /></div>
+                        </div>
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/terrain.png" /></div>
+                        </div>
+                    </div>
+                    <p>Here is the mood board that inspired the style:</p>
+                    <div class="containerimg"><img class="responsiveimg" style="float:left; max-height:500px" src="images/mood.jpg" /></div>
+                    <p>The game was heavily influenced by the coffee stained colors of old documents, especially those seen in movies. The style also draws inspiration from other contemporary WWII games such as World of Tanks. </p>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+            <div id="focusgroup" class="tabcontent4">
+                <div class="column buffer"></div>
+                <div class="column middledrop"><span class="toprighttabclose" onclick="this.parentElement.style.display='none'">x</span>
+                    <h3>Prototyping</h3>
+                    <p>In my time studying and practicing UX design I've learned that understanding how people interact with a system is key to creating better systems. Thus I have taken time in many of my school projects to user test my designs before any actual implementing.</p>
+                    <p>Here are some of the paper prototypes I created and the detailed mock-ups that were made afterwards:</p>
+                    <div class="imgrow">
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/paperhome.png" /></div>
+                            <div class="containerimg"> <img class="responsiveimg" style="max-height:500px" src="images/mockhome.png" /></div>
+                        </div>
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/paperresultsd.jpg" /></div>
+                            <div class="containerimg"> <img class="responsiveimg" style="max-height:500px" src="images/mockresults.png" /></div>
+                        </div>
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/paperdrilldown.png" /></div>
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/mockdrilldown.png" /></div>
+                        </div>
+                        <div class="imgcol">
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/paperbuilder.png" /></div>
+                            <div class="containerimg"><img class="responsiveimg" style="max-height:500px" src="images/mockbuilder.png" /></div>
+                        </div>
+                    </div>
+                    <p>For context these were made for a hypothetical conference planning social media platform.</p>
+                </div>
+                <div class="column buffer"></div>
+            </div>
+        </div>
+    </section>
+    <section id="contactme">
+
+        <div class="row">
+            <div class="column buffer"></div>
+            <div class="column middle">
+                <div class="iframe-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d23554.374033086275!2d-76.51588451789803!3d42.442701717597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d08182e0af88f7%3A0xae52768a56ece74!2sIthaca%2C+NY!5e0!3m2!1sen!2sus!4v1518492839301" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="column middle">
+                <div class="containerimg"> <img class="responsiveimg" src="images/BB-8_Panel.png" />
+                    <div class="bottom-lefttxt">Standard Resume...</div>
+                    <div class="overlay" onclick="">
+                        <div class="overlaytext">View my Resume as a PDF</div>
+                    </div>
+                </div>
+            </div>
+            <!--
+            <div class="column middle">
+                <h2>Send Me Mail</h2>
+                <form name="form1" target="_blank" id="form1" action="email.php" method="post">
+                    <div style="overflow-x:auto;">
+                        <table class="table">
+                            <tr>
+                                <td>Your Name</td>
+                                <td>
+                                    <input type="text" name="name" placeholder="Name" /> </td>
+                            </tr>
+                            <tr>
+                                <td>Your Email</td>
+                                <td>
+                                    <input type="text" name="email" placeholder="Email" /> </td>
+                            </tr>
+                            <tr>
+                                <td>Your Message</td>
+                                <td>
+                                    <textarea rows="4" cols="20" name="message" placeholder="Message"></textarea>
+                                </td>
+                            </tr>
+                        </table>
+                    </div>
+                    <center>
+                        <div class="g-recaptcha" data-sitekey="6LdbBB0UAAAAAP2cV3G8Ass0bkmalWrcDcNMx9ia"></div>
+                    </center>
+                    <center>
+                        <input class="button" type="submit" name="submit" value="Send" /> </center>
+                </form>
+                <script language="JavaScript">
+                    var frmvalidator = new Validator("form1");
+                    frmvalidator.addValidation("name", "req", "Please provide your name");
+                    frmvalidator.addValidation("email", "req", "Please provide your email");
+                    frmvalidator.addValidation("email", "email", "Please enter a valid email address");
+
+                </script>
+            </div>
+-->
+            <div class="column buffer"></div>
+        </div>
+    </section>
+    <div class="footer">
+        <p><a href="#headerimg">To Top</a></p>
+    </div>
+</body>
+
+</html>
